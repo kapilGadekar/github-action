@@ -11,16 +11,30 @@ on:
         required: true
         description: your last name please
         default: gadekar
+      full_name:
+        required: true
+        description: Full name
+        default: kappil Bhau
+        type: choice
+        options:
+            - kapil Prabhu gadekar
+            - gadekar kapil prabhu
+            - KAPIL PRABHU GADEKAR
+            - GADEKAR KAPIL PRABHU
 jobs:
   firstecho:
     runs-on: ubuntu-latest
     env:
       Name: ${{inputs.name}}
       Last_name: ${{inputs.last_name}}
+      Full_name: ${{inputs.full_name}}
     steps:
       - name: print name
         run: echo "$Name"
       - name: print second msg
         run: echo "$Last_name"
       - name: Print all NAme
+        run: echo "$Name $Last_name"
+      - name: Print choice name
+        run : echo "$Full_name"
         run: echo " $Name $Last_name"
