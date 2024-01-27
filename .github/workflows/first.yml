@@ -1,6 +1,6 @@
 name: firstjob
 on:
-  push: 
+#  push: 
   workflow_dispatch:
     inputs:
       name:
@@ -14,8 +14,13 @@ on:
 jobs:
   firstecho:
     runs-on: ubuntu-latest
+    env:
+      Name: ${{inputs.name}}
+      Last_name: ${{inputs.last_name}}
     steps:
       - name: print name
-        run: echo "hello kapil"
+        run: echo "$Name"
       - name: print second msg
-        run: echo " bye all "
+        run: echo "$Last_name"
+      - name: Print all NAme
+        run: echo " $Name $Last_name"
