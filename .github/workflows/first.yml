@@ -37,5 +37,3 @@ jobs:
         run: echo "$Name $Last_name"
       - name: Print choice name
         run: echo "$Full_name"
-        
-        run: echo " $Name $Last_name"
