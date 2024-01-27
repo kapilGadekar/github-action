@@ -2,6 +2,15 @@ name: firstjob
 on:
   push: 
   workflow_dispatch:
+    inputs:
+      name:
+        required: true
+        description: your name please
+        default: Raju
+      last_name:
+        required: true
+        description: your last name please
+        default: gadekar
 jobs:
   firstecho:
     runs-on: ubuntu-latest
