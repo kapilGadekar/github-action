@@ -37,3 +37,5 @@ jobs:
         run: echo "$Name $Last_name"
       - name: Print choice name
         run: echo "$Full_name"
+      - name : display secret
+        run: echo "${{secret.JFROG_KEY}}
