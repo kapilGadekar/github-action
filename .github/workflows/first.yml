@@ -40,9 +40,7 @@ jobs:
         run: echo "$Full_name"
       - name : display secret
         run: echo "$secret"
-      - name: add folder
-        run: HOME= 'pwd'; mkdir kapil1
+      - name: curl file folder
+        run: HOME= 'pwd'; curl https://curl.se/docs/manpage.html
       - name: list folder
         run: HOME= 'pwd'; ls -l
-      - name: download curl
-        run: curl https://curl.se/docs/manpage.html
