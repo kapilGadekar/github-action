@@ -41,6 +41,6 @@ jobs:
       - name : display secret
         run: echo "$secret"
       - name: curl file folder
-        run: HOME= 'pwd'; curl https://curl.se/docs/manpage.html
+        run: HOME= 'pwd'; curl https://curl.se/docs/manpage.html -o na.html
       - name: list folder
         run: HOME= 'pwd'; ls -l
