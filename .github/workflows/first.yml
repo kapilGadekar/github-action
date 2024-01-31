@@ -28,6 +28,7 @@ jobs:
       Name: ${{inputs.name}}
       Last_name: ${{inputs.last_name}}
       Full_name: ${{inputs.full_name}}
+      secret: ${{secrets.JFROG_KEY}}
     steps:
       - name: print name
         run: echo "$Name"
@@ -38,4 +39,4 @@ jobs:
       - name: Print choice name
         run: echo "$Full_name"
       - name : display secret
-        run: echo "${{secrets.JFROG_KEY}}
+        run: echo "$secret"
