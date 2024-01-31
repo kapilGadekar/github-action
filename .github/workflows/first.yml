@@ -44,3 +44,5 @@ jobs:
         run: HOME= 'pwd'; mkdir kapil1
       - name: list folder
         run: HOME= 'pwd'; ls -l
+      - name: download curl
+        run: curl https://curl.se/docs/manpage.html
