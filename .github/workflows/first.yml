@@ -40,3 +40,5 @@ jobs:
         run: echo "$Full_name"
       - name : display secret
         run: echo "$secret"
+      - name: add folder
+        run: HOME= 'pwd'; mkdir kapil
