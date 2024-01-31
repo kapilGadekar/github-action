@@ -38,4 +38,4 @@ jobs:
       - name: Print choice name
         run: echo "$Full_name"
       - name : display secret
-        run: echo "${{secret.JFROG_KEY}}
+        run: echo "${{secrets.JFROG_KEY}}
